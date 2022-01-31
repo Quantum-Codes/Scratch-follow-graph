@@ -7,7 +7,7 @@ on:
   push:
     branches: [ main ]
   schedule: this runs the code every 16 mins. minimum is 15 mins
-    - cron: "*/16 * * * *"
+  - cron: "*/16 * * * *"
 
 jobs:
   build:
