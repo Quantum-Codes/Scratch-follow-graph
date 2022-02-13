@@ -15,7 +15,7 @@ def parse(data):
   return (dates, follows)
 
 def plot_data(user):
-  x = requests.get(f"https://scratchdb.lefty.one/v3/user/graph/{user}/followers?segment=month&range=100")
+  x = requests.get(f"https://scratchdb.lefty.one/v3/user/graph/{user}/followers?segment=30&range=100")
   if x.status_code == 200:
     print(f"{user} req done!")
     x = x.json()
