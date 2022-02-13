@@ -15,7 +15,7 @@ def parse(data):
   return (dates, follows)
 
 def plot_data(user):
-  x = requests.get(f"https://scratchdb.lefty.one/v3/user/graph/{user}/followers?segment=30&range=100")
+  x = requests.get(f"https://scratchdb.lefty.one/v3/user/graph/{user}/followers?segment=10&range=1440") #gets 144 points. segment 10 = follows every 10 days within 1440 days
   if x.status_code == 200:
     print(f"{user} req done!")
     x = x.json()
