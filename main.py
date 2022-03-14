@@ -27,7 +27,7 @@ def plot_data(user):
   plt.figure() #this to plot multiple graphs
   plt.plot(data[0], data[1], label = "line 1")
 #plt.autofmt_xdate()
-  plt.xticks(rotation=90)
+  plt.xticks(5,rotation=90)
   plt.tight_layout() 
   plt.xlabel('Dates (yy-dd-mm)')
   plt.ylabel('followers')
